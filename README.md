@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Libris Digital – Leitura sem Distrações</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Modal Carrinho -->
+<div id="modal-carrinho" class="modal">
+  <div class="modal-content">
+    <span class="fechar">×</span>
+    <h2>Seu Carrinho</h2>
+    <ul id="carrinho-lista"><li>O carrinho está vazio.</li></ul>
+    <p id="carrinho-total">Total: R$ 0,00</p>
+    <button id="btn-finalizar" disabled>Finalizar Compra</button>
+  </div>
+</div>
+
+<!-- Header -->
+<header>
+  <div class="logo">📚 Libris Digital</div>
+  <nav>
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#catalogo">Catálogo</a></li>
+      <li><a href="#clube">Clube</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+  <div id="carrinho-info">Carrinho <span id="contador-carrinho">0</span></div>
+</header>
+
+<!-- Busca -->
+<div class="barra-pesquisa">
+  <input id="campo-busca" type="text" placeholder="Buscar livros...">
+  <button id="btn-buscar">Buscar</button>
+</div>
+
+<!-- Hero -->
+<section id="inicio" class="hero">
+  <h1>A leitura digital sem ruídos visuais</h1>
+  <p>Interface limpa, suave e projetada para o foco.</p>
+</section>
+
+<!-- Catálogo -->
+<section id="catalogo" class="catalogo">
+  <h2>Catálogo em Destaque</h2>
+  <div class="livros" id="lista-livros"></div>
+  <div id="sem-resultados" style="display:none; margin-top:40px; color:#d1d1d1;">
+    Nenhum livro encontrado.
+  </div>
+</section>
+
+<!-- Clube -->
+<section id="clube" class="clube">
+  <h2>Clube de Leitura</h2>
+  <p>Participe de discussões, resenhas e encontros.</p>
+  <a class="btn" href="#contato">Inscreva-se</a>
+</section>
+
+<!-- Sobre -->
+<section id="sobre" class="sobre">
+  <h2>Sobre a Libris Digital</h2>
+  <p>Plataforma focada em ergonomia cognitiva, contraste suave e leitura confortável.</p>
+</section>
+
+<!-- Contato -->
+<section id="contato" class="contato">
+  <h2>Fale Conosco</h2>
+  <form id="form-contato">
+    <input type="text" required placeholder="Seu nome">
+    <input type="email" required placeholder="Seu e-mail">
+    <textarea required placeholder="Sua mensagem"></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 Libris Digital – Todos os direitos reservados</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
